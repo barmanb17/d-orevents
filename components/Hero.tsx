@@ -36,7 +36,7 @@ export default function HeroSection() {
           </div>
           <div className="absolute left-1/4 md:left-1/3 top-0 w-1/2 md:w-1/3 z-10 hover:z-20 hover:scale-105 hover:shadow-2xl transition-all duration-300">
             <Image
-              src="/t5.jpeg"
+              src="/t0.jpeg"
               alt="Party tent with balloons"
               width={200}
               height={200}
