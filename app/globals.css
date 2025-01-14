@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slideInFromRight {
+  animation: slideInFromRight 20s linear infinite;
+}
+
+.repeat-infinite {
+  animation-iteration-count: infinite;
+}
+
