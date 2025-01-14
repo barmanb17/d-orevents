@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image'; // Import Image component
 
 const Companies: React.FC = () => {
   const initialTranslateLTR = -48 * 4;
@@ -46,7 +47,6 @@ const Companies: React.FC = () => {
           totalTranslate = -(translateX + initialTranslateRTL);
         }
 
-        
         element.style.transform = `translateX(${totalTranslate}px)`;
       };
 
@@ -55,25 +55,37 @@ const Companies: React.FC = () => {
       };
     };
 
-    
     if (line1Ref.current) setupIntersectionObserver(line1Ref.current, true, 0.15);
     if (line2Ref.current) setupIntersectionObserver(line2Ref.current, false, 0.15);
     if (line3Ref.current) setupIntersectionObserver(line3Ref.current, true, 0.15);
-  }, []);
+  }, [initialTranslateLTR, initialTranslateRTL]); // Added missing dependencies
 
   return (
     <div>
       {/* Arrow Banner */}
       <div className="text-center mb-16 mt-10">
         <p className="text-lg text-muted-foreground mb-4">
-        Get a Glimpse of What We Offer
+          Get a Glimpse of What We Offer
         </p>
-        <div className='flex items-center justify-center gap-3 '>
-        <img className='translate-y-4' src="/asset 2.svg" alt="arrow" />
-        <h2 className="text-4xl md:text-5xl font-medium">
-        Video Showcase of Our Offerings
-        </h2>
-        <img className='translate-y-4 -scale-x-100' src="/asset 2.svg" alt="arrow" />
+        <div className="flex items-center justify-center gap-3">
+          {/* Replaced <img> with <Image> for optimization */}
+          <Image
+            className="translate-y-4"
+            src="/asset 2.svg"
+            alt="arrow"
+            width={32} // Set the width and height for the image
+            height={32}
+          />
+          <h2 className="text-4xl md:text-5xl font-medium">
+            Video Showcase of Our Offerings
+          </h2>
+          <Image
+            className="translate-y-4 -scale-x-100"
+            src="/asset 2.svg"
+            alt="arrow"
+            width={32}
+            height={32}
+          />
         </div>
       </div>
 

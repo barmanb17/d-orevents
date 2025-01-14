@@ -1,3 +1,5 @@
+import Image from 'next/image'  // Import the Next.js Image component
+
 export default function TestimonialsGrid() {
   const testimonials = [
     {
@@ -30,7 +32,7 @@ export default function TestimonialsGrid() {
       image: "/t5.jpeg",
       size: "small",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 px-4 max-w-7xl mx-auto">
@@ -43,26 +45,25 @@ export default function TestimonialsGrid() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
-        {testimonials.map((testimonial, index) => (
+        {testimonials.map((testimonial) => (
           <div
-            key={index}
+            key={testimonial.name}  // Using testimonial.name as the key
             className={`relative group overflow-hidden rounded-3xl 
-              ${
-                testimonial.size === "large"
-                  ? "lg:col-span-2 lg:row-span-2"
-                  : testimonial.size === "medium"
-                  ? "lg:col-span-1 lg:row-span-2"
-                  : ""
-              }`}
+              ${testimonial.size === "large" 
+                ? "lg:col-span-2 lg:row-span-2" 
+                : testimonial.size === "medium" 
+                ? "lg:col-span-1 lg:row-span-2" 
+                : ""}`}
           >
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 group-hover:from-black/80 transition-all duration-300" />
-            <img
+            <Image
               src={testimonial.image}
               alt={`${testimonial.name}'s testimonial`}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              width={500}  // Adjust these values based on your layout needs
+              height={300} // Set a height for proper aspect ratio
             />
             <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
-              
               <p className="text-lg mb-4 line-clamp-3 group-hover:line-clamp-none transition-all duration-300">
                 {testimonial.text}
               </p>
@@ -72,6 +73,5 @@ export default function TestimonialsGrid() {
         ))}
       </div>
     </section>
-  )
+  );
 }
-

@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import Image from 'next/image';  // Import Image from Next.js
 
 export default function OnlinePackage() {
   return (
@@ -17,10 +18,7 @@ export default function OnlinePackage() {
                 customized to your design preferences and budget.
               </p>
             </div>
-            <Button 
-              
-              className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-8"
-            >
+            <Button className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-8">
               Get Started
             </Button>
           </div>
@@ -39,45 +37,52 @@ export default function OnlinePackage() {
 
                 {/* Main Image */}
                 <div className="rounded-2xl overflow-hidden">
-                  <img
+                  <Image
                     src="/image.png"
                     alt="Wedding decoration package"
                     className="w-full h-64 object-cover"
+                    width={500}  // Adjust width to your preference
+                    height={300} // Adjust height to your preference
                   />
                 </div>
 
                 {/* Thumbnail Grid */}
                 <div className="grid grid-cols-3 gap-4">
                   <Card className="p-2">
-                    <img
+                    <Image
                       src="/p3.png"
                       alt="Package thumbnail 1"
                       className="w-full aspect-square object-cover rounded"
+                      width={200}  // Adjust these values to fit your layout
+                      height={200} // Ensure a square aspect ratio for the thumbnail
                     />
-                    <p className="text-sm text-center mt-2">Catelog 1</p>
+                    <p className="text-sm text-center mt-2">Catalog 1</p>
                   </Card>
                   <Card className="p-2">
-                    <img
+                    <Image
                       src="/p4.png"
                       alt="Package thumbnail 2"
                       className="w-full aspect-square object-cover rounded"
+                      width={200}  // Adjust width and height for consistency
+                      height={200}
                     />
-                    <p className="text-sm text-center mt-2">Catelog 2</p>
+                    <p className="text-sm text-center mt-2">Catalog 2</p>
                   </Card>
                   <Card className="p-2">
-                    <img
+                    <Image
                       src="/p5.png"
                       alt="Package thumbnail 3"
                       className="w-full aspect-square object-cover rounded"
+                      width={200}
+                      height={200}
                     />
-                    <p className="text-sm text-center mt-2">Catelog 3</p>
+                    <p className="text-sm text-center mt-2">Catalog 3</p>
                   </Card>
                 </div>
 
                 {/* Total Package */}
                 <div className="bg-purple-600 text-white rounded-xl p-4 flex justify-center items-center font-bold">
                   <span>Enquire Now</span>
-                  
                 </div>
               </div>
             </div>
@@ -88,6 +93,5 @@ export default function OnlinePackage() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

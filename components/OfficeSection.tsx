@@ -1,5 +1,6 @@
-import { Clock, MapPin } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { Clock, MapPin } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import Image from 'next/image'; // Import Image from Next.js
 
 export default function OfficeSection() {
   return (
@@ -12,8 +13,7 @@ export default function OfficeSection() {
           </h2>
           <div className="space-y-2">
             <p className="text-3xl md:text-4xl lg:text-5xl font-medium">
-             
-              Come see us for an in-depth, 
+              Come see us for an in-depth,
             </p>
             <p className="text-3xl md:text-4xl lg:text-5xl font-serif italic">
               discussion with one of our wedding specialists!
@@ -35,10 +35,12 @@ export default function OfficeSection() {
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Office Image */}
           <div className="rounded-3xl overflow-hidden">
-            <img
+            <Image
               src="/o1.jpg"
               alt="Meragi office interior"
               className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+              width={800}  // Adjust width for optimal rendering
+              height={400} // Adjust height based on your design needs
             />
           </div>
 
@@ -78,6 +80,5 @@ export default function OfficeSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

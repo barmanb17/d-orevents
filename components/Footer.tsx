@@ -1,6 +1,6 @@
-import { Facebook, Instagram, Twitter } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
+import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function Footer() {
   return (
@@ -64,7 +64,8 @@ export default function Footer() {
               <Input 
                 type="email" 
                 placeholder="Your email" 
-                className="bg-white/10 border-white/20 text-white placeholder-gray-400"
+                className="bg-white/10 border-white/20 text-white placeholder-gray-400 focus:ring-2 focus:ring-pink-500"
+                aria-label="Your email address"
               />
               <Button className="w-full bg-pink-600 hover:bg-pink-700 text-white">
                 Subscribe
@@ -89,6 +90,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
-

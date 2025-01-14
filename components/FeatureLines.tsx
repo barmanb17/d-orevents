@@ -46,7 +46,7 @@ const FeatureLine: React.FC = () => {
       };
     };
 
-    const cleanupLine1 = setupIntersectionObserver(line1Ref.current, true, 0.8);
+    
 
 
   }, []);
