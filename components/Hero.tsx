@@ -6,11 +6,9 @@ import Link from "next/link";  // Added Link import for internal navigation
 export default function HeroSection() {
   return (
     <div
-      className="min-h-screen relative bg-cover bg-center"
+      className="min-h-screen lg:relative bg-cover bg-center"
       style={{ backgroundImage: "url('/wedding3.jpeg')" }}
     >
-      {/* Optional Dark Overlay */}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
 
       {/* Hero Content */}
       <div className="container mx-auto px-4 pt-32 relative z-10">
@@ -18,7 +16,7 @@ export default function HeroSection() {
           <p className="text-white text-base md:text-lg">
             Planning For A Dream Party?
           </p>
-          <div className="text-xl flex items-center justify-center text-white">
+          <div className="text-xl  flex items-center justify-center text-white">
             <FlipWordsDemo /> {/* Displaying the FlipWordsDemo component for added effect */}
           </div>
         </div>

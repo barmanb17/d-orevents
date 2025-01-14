@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#1a1a1a] to-[#1a1a1a] text-white">
-      <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-8  py-16 sm:px-6 lg:px-2">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {/* Logo and tagline */}
           <div className="col-span-1 md:col-span-3 lg:col-span-1">

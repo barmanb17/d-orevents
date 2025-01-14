@@ -44,7 +44,7 @@ export default function TestimonialsGrid() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
+      <div className="grid mx-8 lg:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.name}  // Using testimonial.name as the key

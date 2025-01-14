@@ -4,7 +4,7 @@ import Image from 'next/image';  // Import Image from Next.js
 
 export default function OnlinePackage() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 mx-10 lg:mx-0">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

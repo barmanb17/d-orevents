@@ -4,7 +4,7 @@ import Image from 'next/image'; // Import Image from Next.js
 
 export default function OfficeSection() {
   return (
-    <section className="relative bg-[#1a1a1a] text-white py-20 px-4">
+    <section className="relative bg-[#1a1a1a] text-white py-20 px-8 ">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">

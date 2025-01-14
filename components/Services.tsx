@@ -35,17 +35,17 @@ export default function ServicesSection() {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {services.map((service) => (
           <div
             key={service.title}  // Using service title as a unique key
-            className="rounded-xl bg-gray-100 p-3 flex flex-col items-center text-center"
+            className="rounded-xl mx-8 lg:mx-0 bg-gray-100 p-3 flex flex-col items-center text-center"
           >
             <div className="w-full aspect-square mb-6 rounded-xl overflow-hidden">
               <Image
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover "
                 width={500}  // You can adjust the width and height as needed
                 height={500} // Ensuring aspect ratio and optimization
               />
