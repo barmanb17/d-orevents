@@ -10,7 +10,7 @@ const Companies: React.FC = () => {
   const videoReels = [
     "/video5.mp4",
     "/video2.mp4",  
-    "/video1.mp4",  
+    "/video0.mp4",  
     "/video3.mp4",  
     "/video6.mp4",  
     "/video4.mp4",
