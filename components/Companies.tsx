@@ -6,7 +6,6 @@ const Companies: React.FC = () => {
   const initialTranslateLTR = -48 * 4;
   const initialTranslateRTL = 36 * 4;
 
-  // Define the video sources (array of URLs or video file paths)
   const videoReels = [
     "/video5.mp4",
     "/video2.mp4",  
@@ -47,7 +46,7 @@ const Companies: React.FC = () => {
           totalTranslate = -(translateX + initialTranslateRTL);
         }
 
-        // Update transform style safely
+        
         element.style.transform = `translateX(${totalTranslate}px)`;
       };
 
@@ -56,14 +55,10 @@ const Companies: React.FC = () => {
       };
     };
 
-    // Setup the observers for the lines
+    
     if (line1Ref.current) setupIntersectionObserver(line1Ref.current, true, 0.15);
     if (line2Ref.current) setupIntersectionObserver(line2Ref.current, false, 0.15);
     if (line3Ref.current) setupIntersectionObserver(line3Ref.current, true, 0.15);
-
-    return () => {
-      // Clean up any resources on unmount
-    };
   }, []);
 
   return (
