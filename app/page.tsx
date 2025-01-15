@@ -8,6 +8,7 @@ import TestimonialsGrid from "@/components/TestimonialsGrid";
 import OnlinePackage from "@/components/OnlinePackage";
 import OfficeSection from "@/components/OfficeSection";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/FAQs";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <FeatureLine/>
       <OnlinePackage/>
       <TestimonialsGrid/>
+      <FAQ/>
       <OfficeSection/>
       <Footer/>
     </div>
