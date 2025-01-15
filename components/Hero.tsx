@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { FlipWordsDemo } from "./FlipWordsDemo";
-import Image from "next/image";
 import Link from "next/link";  // Added Link import for internal navigation
 
 export default function HeroSection() {
