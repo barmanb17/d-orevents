@@ -13,7 +13,7 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="container mx-auto px-4 pt-32 relative z-10">
         <div className="text-center">
-          <p className="text-white text-base md:text-lg">
+          <p className="text-white text-base md:text-lg mt-20 ">
             Planning For A Dream Party?
           </p>
           <div className="text-xl  flex items-center justify-center text-white">
@@ -22,7 +22,7 @@ export default function HeroSection() {
         </div>
 
         {/* Image Gallery with hover effects */}
-        <div className="relative max-w-5xl mx-auto h-[300px] md:h-[400px] md:mb-12">
+        {/* <div className="relative max-w-5xl mx-auto m-2 h-[300px] md:h-[400px] md:mb-12">
           <div className="absolute left-0 top-0 w-1/2 md:w-1/3 transform -rotate-6 md:-rotate-12 hover:z-20 hover:scale-105 hover:shadow-2xl transition-all duration-300">
             <Image
               src="/t2.jpeg"
@@ -50,11 +50,11 @@ export default function HeroSection() {
               className="w-full h-full object-cover rounded-lg shadow-2xl transition-all duration-300"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Description and CTAs */}
         <div className="text-center max-w-2xl mx-auto">
-          <p className="text-gray-300 text-base md:text-lg mb-6">
+          <p className="text-gray-300 text-base md:text-lg mb-8 mt-8">
             We provide all the essentials for your event – from setup to cleanup. Full-service catering and rentals for weddings and parties in Guwahati, Jorhat, and Dibrugarh.
           </p>
           <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 pb-6">
