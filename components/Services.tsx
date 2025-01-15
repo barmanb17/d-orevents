@@ -1,4 +1,4 @@
-import Image from 'next/image'  // Import the Next.js Image component
+import Image from 'next/image'  
 
 export default function ServicesSection() {
   const services = [
@@ -8,19 +8,19 @@ export default function ServicesSection() {
       image: "/s1.png",
     },
     {
-      title: "Catering",  // Corrected spelling
+      title: "Catering",  
       description: "Make your wedding day unforgettable with a culinary experience that lasts a lifetime.",
       image: "/s2.jpg",
     },
     {
       title: "Venue Consultation",
       description: "Receive professional guidance to choose the ideal venue for your special day.",
-      image: "/s9.png",  // Fixed missing leading slash
+      image: "/s9.png",  
     },
     {
       title: "Customised Package",
       description: "Our exclusive offerings for extravagant, luxury weddings that make a statement.",
-      image: "/s8.png",  // Fixed missing leading slash
+      image: "/s8.png",  
     },
   ];
 
@@ -38,7 +38,7 @@ export default function ServicesSection() {
       <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
         {services.map((service) => (
           <div
-            key={service.title}  // Using service title as a unique key
+            key={service.title}  
             className="rounded-xl mx-8 lg:mx-0 bg-gray-100 p-3 flex flex-col items-center text-center"
           >
             <div className="w-full aspect-square mb-6 rounded-xl overflow-hidden">
@@ -46,8 +46,8 @@ export default function ServicesSection() {
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover "
-                width={500}  // You can adjust the width and height as needed
-                height={500} // Ensuring aspect ratio and optimization
+                width={500}  
+                height={500} 
               />
             </div>
             <h3 className="text-2xl font-medium mb-3">{service.title}</h3>

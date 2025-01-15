@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import Image from 'next/image';  // Import Image from Next.js
+import Image from 'next/image';  
 
 export default function OnlinePackage() {
   return (
@@ -41,8 +41,8 @@ export default function OnlinePackage() {
                     src="/image.png"
                     alt="Wedding decoration package"
                     className="w-full h-64 object-cover"
-                    width={500}  // Adjust width to your preference
-                    height={300} // Adjust height to your preference
+                    width={500}  
+                    height={300} 
                   />
                 </div>
 
@@ -53,8 +53,8 @@ export default function OnlinePackage() {
                       src="/p3.png"
                       alt="Package thumbnail 1"
                       className="w-full aspect-square object-cover rounded"
-                      width={200}  // Adjust these values to fit your layout
-                      height={200} // Ensure a square aspect ratio for the thumbnail
+                      width={200}  
+                      height={200} 
                     />
                     <p className="text-sm text-center mt-2">Catalog 1</p>
                   </Card>
@@ -63,7 +63,7 @@ export default function OnlinePackage() {
                       src="/p4.png"
                       alt="Package thumbnail 2"
                       className="w-full aspect-square object-cover rounded"
-                      width={200}  // Adjust width and height for consistency
+                      width={200}  
                       height={200}
                     />
                     <p className="text-sm text-center mt-2">Catalog 2</p>

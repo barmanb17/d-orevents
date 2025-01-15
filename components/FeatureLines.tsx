@@ -26,7 +26,7 @@ const FeatureLine: React.FC = () => {
       element.style.transition = 'transform 0.1s ease-out'; // Add smooth animation
     };
 
-    // Set up the intersection observer
+    // intersection observer
     const setupIntersectionObserver = (
       element: HTMLDivElement | null,
       isLTR: boolean,
@@ -46,7 +46,6 @@ const FeatureLine: React.FC = () => {
       const intersectionObserver = new IntersectionObserver(intersectionCallback);
       intersectionObserver.observe(element);
 
-      // Cleanup on unmount or when the element goes out of view
       return () => {
         window.removeEventListener('scroll', () => scrollHandler(element, isLTR, speed));
         intersectionObserver.disconnect();
@@ -55,9 +54,9 @@ const FeatureLine: React.FC = () => {
 
     if (line1Ref.current) {
       const cleanup = setupIntersectionObserver(line1Ref.current, true, 0.2); // Adjust speed here
-      return cleanup; // Cleanup function
+      return cleanup; 
     }
-  }, []); // Only run once when the component mounts
+  }, []); 
 
   return (
     <div className="px-6 py-12 max-w-8xl mx-auto lg:px-8">

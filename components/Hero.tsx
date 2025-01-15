@@ -16,7 +16,7 @@ export default function HeroSection() {
             Planning For A Dream Party?
           </p>
           <div className="text-xl  flex items-center justify-center text-white">
-            <FlipWordsDemo /> {/* Displaying the FlipWordsDemo component for added effect */}
+            <FlipWordsDemo />
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import { Clock, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-import Image from 'next/image'; // Import Image from Next.js
+import Image from 'next/image'; 
 
 export default function OfficeSection() {
   return (
@@ -39,8 +39,8 @@ export default function OfficeSection() {
               src="/o1.jpg"
               alt="Meragi office interior"
               className="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
-              width={800}  // Adjust width for optimal rendering
-              height={400} // Adjust height based on your design needs
+              width={800}  
+              height={400} 
             />
           </div>
 

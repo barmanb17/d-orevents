@@ -1,4 +1,4 @@
-import Image from 'next/image'  // Import the Next.js Image component
+import Image from 'next/image'  
 
 export default function TestimonialsGrid() {
   const testimonials = [
@@ -47,7 +47,7 @@ export default function TestimonialsGrid() {
       <div className="grid mx-8 lg:mx-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[300px]">
         {testimonials.map((testimonial) => (
           <div
-            key={testimonial.name}  // Using testimonial.name as the key
+            key={testimonial.name}  
             className={`relative group overflow-hidden rounded-3xl 
               ${testimonial.size === "large" 
                 ? "lg:col-span-2 lg:row-span-2" 
@@ -60,8 +60,8 @@ export default function TestimonialsGrid() {
               src={testimonial.image}
               alt={`${testimonial.name}'s testimonial`}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              width={500}  // Adjust these values based on your layout needs
-              height={300} // Set a height for proper aspect ratio
+              width={500}  
+              height={300} 
             />
             <div className="absolute inset-0 p-6 flex flex-col justify-end text-white">
               <p className="text-lg mb-4 line-clamp-3 group-hover:line-clamp-none transition-all duration-300">

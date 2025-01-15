@@ -68,12 +68,11 @@ const Companies: React.FC = () => {
           Get a Glimpse of What We Offer
         </p>
         <div className="flex items-center justify-center gap-3">
-          {/* Replaced <img> with <Image> for optimization */}
           <Image
             className="translate-y-4"
             src="/asset 2.svg"
             alt="arrow"
-            width={32} // Set the width and height for the image
+            width={32} 
             height={32}
           />
           <h2 className="text-4xl md:text-5xl font-medium">

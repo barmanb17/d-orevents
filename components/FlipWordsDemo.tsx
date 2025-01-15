@@ -1,4 +1,4 @@
-// FlipWordsDemo.js
+
 import React from "react";
 import { FlipWords } from "@/components/ui/flip-word";
 

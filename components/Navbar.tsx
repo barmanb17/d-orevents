@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
-import Link from 'next/link';  // Import Link from next/link
-import Image from 'next/image'; // Import Image from next/image
+import Link from 'next/link';  
+import Image from 'next/image'; 
 
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
           </a>
 
           <button className='p-2' onClick={handleMenu}>
-            <span className="text-2xl">✖</span> {/* Close icon */}
+            <span className="text-2xl">✖</span> 
           </button>
         </div>
 
