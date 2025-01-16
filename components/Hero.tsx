@@ -5,7 +5,7 @@ import Link from "next/link";  // Added Link import for internal navigation
 export default function HeroSection() {
   return (
     <div
-      className="min-h-screen lg:relative bg-cover bg-center"
+      className="relative min-h-screen lg:relative bg-cover bg-center"
       style={{ backgroundImage: "url('/wedding3.jpeg')" }}
     >
 
