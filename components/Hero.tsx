@@ -10,7 +10,7 @@ export default function HeroSection() {
     >
 
       {/* Hero Content */}
-      <div className="container mx-auto px-4 pt-32 relative z-10">
+      <div className="container mx-auto px-4 pt-14 lg:pt-32 relative z-10">
         <div className="text-center">
           <p className="text-white text-base md:text-lg mt-20 ">
             Planning For A Dream Party?
@@ -56,16 +56,16 @@ export default function HeroSection() {
           <p className="text-gray-300 text-base md:text-lg mb-8 mt-8">
             We provide all the essentials for your event – from setup to cleanup. Full-service catering and rentals for weddings and parties in Guwahati, Jorhat, and Dibrugarh.
           </p>
-          <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 pb-6">
-            <Link href="/explore">
-              <Button className="bg-purple-500 hover:bg-purple-600 text-white px-6 md:px-8 py-4 md:py-6 text-base md:text-lg w-full md:w-auto transition-all duration-300">
+          <div className="lg:flex gap-4 flex lg:flex-row items-center justify-center md:space-y-0 md:space-x-4 pb-6">
+            <Link href="/">
+              <Button className="bg-purple-500 hover:bg-purple-600 text-white px-7 md:px-8 py-6 md:py-6 text-base md:text-lg lg:w-full md:w-auto transition-all duration-300">
                 Explore More
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="/">
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-[#1a1a1a] px-6 md:px-8 py-4 md:py-6 text-base md:text-lg w-full md:w-auto transition-all duration-300"
+                className="border-white text-white hover:bg-white hover:text-[#1a1a1a] px-9 md:px-8 py-6 md:py-6 text-base md:text-lg lg:w-full md:w-auto transition-all duration-300"
               >
                 Contact Us
               </Button>

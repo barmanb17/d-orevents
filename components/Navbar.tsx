@@ -35,7 +35,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <div className={`lg:hidden  fixed inset-0 bg-white ${isMenuOpen ? 'block' : 'hidden'} p-6 z-50`}>
+      <div className={`lg:hidden fixed inset-0 ${isMenuOpen ? 'block' : 'hidden'} p-6 z-50`}>
         <div className="flex justify-between items-center">
           <a href="#" id='brand' className='flex gap-2 items-center'>
             <div className="flex justify-center items-center w-28 h-28">

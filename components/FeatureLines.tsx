@@ -74,7 +74,7 @@ const FeatureLine: React.FC = () => {
           <span> ● </span>
           <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Consultation</h3>
           <span> ● </span>
-          <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Download Analytics</h3>
+          <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Catering</h3>
           <span> ● </span>
           <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Catering</h3>
           <span> ● </span>
@@ -82,7 +82,7 @@ const FeatureLine: React.FC = () => {
           <span> ● </span>
           <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Private Party</h3>
           <span> ● </span>
-          <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Decoration</h3>
+          <h3 className="my-0 whitespace-nowrap mx-2 text-2xl font-semibold">Catering</h3>
           <span> ● </span>
         </div>
       </div>

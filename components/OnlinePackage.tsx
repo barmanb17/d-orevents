@@ -19,19 +19,19 @@ export default function OnlinePackage() {
       { src: "/p5.png", title: "Haldi Catalog 3" },
     ],
     Reception: [
-      { src: "/r1.png", title: "Reception Catalog 1" },
-      { src: "/r2.png", title: "Reception Catalog 2" },
-      { src: "/r3.png", title: "Reception Catalog 3" },
+      { src: "/", title: "Reception Catalog 1" },
+      { src: "/", title: "Reception Catalog 2" },
+      { src: "/", title: "Reception Catalog 3" },
     ],
     Wedding: [
-      { src: "/w1.png", title: "Wedding Catalog 1" },
-      { src: "/w2.png", title: "Wedding Catalog 2" },
-      { src: "/w3.png", title: "Wedding Catalog 3" },
+      { src: "/", title: "Wedding Catalog 1" },
+      { src: "/", title: "Wedding Catalog 2" },
+      { src: "/", title: "Wedding Catalog 3" },
     ],
     Mehendi: [
-      { src: "/m1.png", title: "Mehendi Catalog 1" },
-      { src: "/m2.png", title: "Mehendi Catalog 2" },
-      { src: "/m3.png", title: "Mehendi Catalog 3" },
+      { src: "/", title: "Mehendi Catalog 1" },
+      { src: "/", title: "Mehendi Catalog 2" },
+      { src: "/", title: "Mehendi Catalog 3" },
     ],
   };
 
