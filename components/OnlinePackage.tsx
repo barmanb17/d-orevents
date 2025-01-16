@@ -6,12 +6,12 @@ import { Card } from "@/components/ui/card";
 import Image from "next/image";
 
 export default function OnlinePackage() {
-  // Define the type for categories
+  
   type Category = "Haldi" | "Reception" | "Wedding" | "Mehendi";
 
   const [activeCategory, setActiveCategory] = useState<Category>("Haldi");
 
-  // Define categories with explicit types
+  
   const categories: Record<Category, { src: string; title: string }[]> = {
     Haldi: [
       { src: "/p3.png", title: "Haldi Catalog 1" },
@@ -35,12 +35,11 @@ export default function OnlinePackage() {
     ],
   };
 
-  // Define main images for each category
   const mainImages: Record<Category, string> = {
-    Haldi: "/image.png", // Add the appropriate image path
-    Reception: "/reception-main.png", // Add the appropriate image path
-    Wedding: "/wedding-main.png", // Add the appropriate image path
-    Mehendi: "/mehendi-main.png", // Add the appropriate image path
+    Haldi: "/image.png",
+    Reception: "/",
+    Wedding: "/", 
+    Mehendi: "/", 
   };
 
   // Background color mapping
@@ -97,7 +96,7 @@ export default function OnlinePackage() {
                 {/* Main Image */}
                 <div className="rounded-2xl overflow-hidden">
                   <Image
-                    src={mainImages[activeCategory]} // Use the main image for the active category
+                    src={mainImages[activeCategory]}
                     alt={`${activeCategory} Package`}
                     className="w-full h-64 object-cover"
                     width={500}
