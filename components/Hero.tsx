@@ -15,7 +15,7 @@ export default function HeroSection() {
           <p className="text-white text-base md:text-lg mt-20 ">
             Planning For A Dream Party?
           </p>
-          <div className="text-xl  flex items-center justify-center text-white">
+          <div className="text-xl flex items-center justify-center text-white">
             <FlipWordsDemo />
           </div>
         </div>
